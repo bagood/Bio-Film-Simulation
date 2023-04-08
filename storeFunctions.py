@@ -156,25 +156,3 @@ class functions:
             bacteria_frames[i] = self.mat_bacteria
             nutrition_frames[i] = self.mat_nutrition
         return (bacteria_frames, nutrition_frames)
-
-
-
-
-
-
-        
-
-
-    
-
-            
-
-
-
-
-        
-
-
-
-
-        
