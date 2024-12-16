@@ -1,8 +1,9 @@
-from storeFunc import functions
+from storeFunctions import functions
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import seaborn as sns
 
+# Initiate all the variables for the simulation
 n_row = 50
 n_col = 50
 probInitBacteria = 0.15
@@ -11,10 +12,11 @@ probGrow = 75
 consumeRate = 0.5
 iter = 100
 
+# Generates each iterations for the simulation
 bioFilm = functions(n_row, n_col, probInitBacteria, diffusionRate, probGrow, consumeRate, iter)
 bacteria_frames, nutrition_frames = bioFilm.simulate()
 
-
+# Visualize the simulation
 def init():
     plt.clf()
     return None
